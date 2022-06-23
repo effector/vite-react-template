@@ -1,3 +1,3 @@
-# vitejs-vite-g9vbgh
+# Effector React Vite
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-g9vbgh)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/effector-react)
