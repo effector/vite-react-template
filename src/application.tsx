@@ -1,14 +1,23 @@
-import { useState } from 'react';
+import { useEvent, useStore } from 'effector-react';
 import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
 import './application.css';
+import { $counter, buttonClicked } from './model';
 
 export function App() {
-  const [count, setCount] = useState(0);
+  const handleClick = useEvent(buttonClicked);
+  const counter = useStore($counter);
 
   return (
     <div className="App">
       <div>
+        <a href="https://effector.dev" target="_blank">
+          <img
+            src="https://effector.dev/img/comet.png"
+            className="logo effector"
+            alt="Effector logo"
+          />
+        </a>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -18,9 +27,7 @@ export function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <button onClick={handleClick}>count is {counter}</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
