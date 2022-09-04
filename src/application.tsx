@@ -1,12 +1,11 @@
-import { useEvent, useStore } from 'effector-react';
+import { useUnit } from 'effector-react';
 import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
 import './application.css';
 import { $counter, buttonClicked } from './model';
 
 export function App() {
-  const handleClick = useEvent(buttonClicked);
-  const counter = useStore($counter);
+  const [counter, handleClick] = useUnit([$counter, buttonClicked]);
 
   return (
     <div className="App">
