@@ -6,6 +6,6 @@ In the box:
 
 - effector
 - patronum
-- react 17
+- react 18
 - typescript 4.6.4
 - vitejs
