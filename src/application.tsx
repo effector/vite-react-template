@@ -1,6 +1,7 @@
 import { useUnit } from 'effector-react';
 import viteLogo from '/vite.svg';
 import reactLogo from './assets/react.svg';
+import effectorLogo from './assets/effector.png'
 import './application.css';
 import { $counter, buttonClicked } from './model';
 
@@ -12,7 +13,7 @@ export function App() {
       <div>
         <a href="https://effector.dev" target="_blank">
           <img
-            src="https://effector.dev/img/comet.png"
+            src={effectorLogo}
             className="logo effector"
             alt="Effector logo"
           />
