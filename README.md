@@ -8,4 +8,4 @@ In the box:
 - patronum
 - react 18
 - typescript 4.6.4
-- vitejs
+- vitejs 4
