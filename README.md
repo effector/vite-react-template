@@ -4,8 +4,8 @@
 
 In the box:
 
-- effector
-- patronum
-- react 18
-- typescript 4.6.4
-- vitejs
+- effector v22
+- patronum v1
+- react v18
+- vite v4
+- typescript v4.9.5
