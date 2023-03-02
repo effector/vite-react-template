@@ -11,5 +11,7 @@
     "@babel/react",
     "patronum/babel-preset"
   ],
-  "plugins": ["effector/babel-plugin"]
+  "plugins": [
+    ["effector/babel-plugin", {"factories": []}]
+  ]
 }
