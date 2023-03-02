@@ -1,12 +1,5 @@
 {
   "presets": [
-    [
-      "@babel/env",
-      {
-        "useBuiltIns": "usage",
-        "corejs": 3
-      }
-    ],
     "@babel/typescript",
     "@babel/react",
     "patronum/babel-preset"
